@@ -1,0 +1,31 @@
+// p.153
+
+package p220210;
+
+public class Day11_02 {
+
+	public static void main(String[] args) {
+		
+		Param p = new Param();
+		p.add(10, 5); 		// 매개변수
+		// p.add("10", "5"); -> 에러
+		
+		p.add2(10, 5);
+
+	}
+
+}
+
+
+class Param {
+	
+	void add(int x, int y) {
+		int z = x + y;
+		System.out.println(z);
+	}
+	
+	void add2(double x, double y) {
+		double z = x + y;
+		System.out.println(z);
+	}
+}
